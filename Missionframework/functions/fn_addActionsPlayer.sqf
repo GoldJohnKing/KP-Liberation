@@ -335,22 +335,22 @@ _player addAction [
 ];
 
 // Reassign Zeus
-if (player == ([] call KPLIB_fnc_getCommander)) then {
-    _player addAction [
-        ["<t color='#FF0000'>", localize "STR_REASSIGN_ZEUS", "</t>"] joinString "",
-        {[] call KPLIB_fnc_requestZeus},
-        nil,
-        -870,
-        false,
-        true,
-        "",
-        "
-            alive _originalTarget
-            && {isNull (_originalTarget getVariable ['KPLIB_ownedZeusModule', objNull])}
-            && {build_confirmed isEqualTo 0}
-        "
-    ];
-};
+// if (player == ([] call KPLIB_fnc_getCommander)) then { // Edited: Disable Zeus reassign
+//     _player addAction [
+//         ["<t color='#FF0000'>", localize "STR_REASSIGN_ZEUS", "</t>"] joinString "",
+//         {[] call KPLIB_fnc_requestZeus},
+//         nil,
+//         -870,
+//         false,
+//         true,
+//         "",
+//         "
+//             alive _originalTarget
+//             && {isNull (_originalTarget getVariable ['KPLIB_ownedZeusModule', objNull])}
+//             && {build_confirmed isEqualTo 0}
+//         "
+//     ];
+// };
 
 // Create FOB clearance
 _player addAction [
