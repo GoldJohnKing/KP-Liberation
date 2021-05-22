@@ -3,7 +3,7 @@ class Params {
         title = $STR_PARAMS_LOADSAVEPARAMS;
         values[] = {0, 1, 2};
         texts[] = {$STR_PARAMS_LOADSAVEPARAMS_SAVE, $STR_PARAMS_LOADSAVEPARAMS_LOAD, $STR_PARAMS_LOADSAVEPARAMS_SELECTED};
-        default = 1; // If you want to set mission parameters via server.cfg or this file, then set this value to 2
+        default = 2; // If you want to set mission parameters via server.cfg or this file, then set this value to 2
     };
     class Spacer0 {
         title = "";
@@ -45,7 +45,7 @@ class Params {
         title = $STR_PARAMS_CIVILIANS;
         values[] = {0, 1, 2, 3};
         texts[] = {$STR_PARAMS_CIVILIANS1, $STR_PARAMS_CIVILIANS2, $STR_PARAMS_CIVILIANS3, $STR_PARAMS_CIVILIANS4};
-        default = 2;
+        default = 3;
     };
     class FirstFob {
         title = $STR_PARAMS_FIRSTFOB;
@@ -57,19 +57,19 @@ class Params {
         title = $STR_PARAMS_FIRSTFOBVEHICLE;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_FIRSTFOBVEHICLE_CONTAINTER, $STR_PARAMS_FIRSTFOBVEHICLE_TRUCK};
-        default = 0;
+        default = 1;
     };
     class MaximumFobs {
         title = $STR_PARAM_FOBS_COUNT;
         values[] = {3, 5, 7, 10, 15, 20, 26};
         texts[] = {3, 5, 7, 10, 15, 20, 26};
-        default = 10;
+        default = 15;
     };
     class MaxSquadSize {
         title = $STR_PARAM_SQUAD_SIZE;
         values[] = {0, 1, 2, 4, 6, 8, 10, 12, 16, 20, 24, 30, 36};
         texts[] = {0, 1, 2, 4, 6, 8, 10, 12, 16, 20, 24, 30, 36};
-        default = 12;
+        default = 8;
     };
     class BluforDefenders {
         title = $STR_PARAM_BLUFOR_DEFENDERS;
@@ -129,7 +129,7 @@ class Params {
         title = $STR_PARAMS_PLAYERMENU;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_PLAYERMENU_GREUH, $STR_PARAMS_PLAYERMENU_KP};
-        default = 1;
+        default = 0;
     };
     class VictoryCondition {
         title = $STR_PARAMS_VICTORYCONDITION;
@@ -159,13 +159,13 @@ class Params {
         title = $STR_A3_ReviveDuration;
         values[] = {6, 8, 10,12, 15, 20, 25, 30};
         texts[] = {6, 8, 10, 12, 15, 20, 25, 30};
-        default = 6;
+        default = 8;
     };
     class ReviveRequiredTrait {
         title = $STR_A3_RequiredTrait;
         values[] = {0, 1};
         texts[] = {$STR_A3_None, $STR_A3_Medic};
-        default = 1;
+        default = 0;
     };
     class ReviveMedicSpeedMultiplier {
         title = $STR_A3_RequiredTrait_MedicSpeedMultiplier;
@@ -177,25 +177,25 @@ class Params {
         title = $STR_A3_RequiredItems;
         values[] = {0, 1, 2};
         texts[] = {$STR_A3_None, $STR_A3_Medikit, $STR_A3_FirstAidKitOrMedikit};
-        default = 1;
+        default = 2;
     };
     class UnconsciousStateMode {
         title = $STR_A3_IncapacitationMode;
         values[] = {0, 1, 2};
         texts[] = {$STR_A3_Basic, $STR_A3_Advanced, $STR_A3_Realistic};
-        default = 0;
+        default = 2;
     };
     class ReviveBleedOutDuration {
         title = $STR_A3_BleedOutDuration;
-        values[] = {10, 15, 20, 30, 45, 60, 90, 180};
-        texts[] = {10, 15, 20, 30, 45, 60, 90, 180};
-        default = 180;
+        values[] = {10, 15, 20, 30, 45, 60, 90, 180, 300};
+        texts[] = {10, 15, 20, 30, 45, 60, 90, 180, 300};
+        default = 300;
     };
     class ReviveForceRespawnDuration {
         title = $STR_A3_ForceRespawnDuration;
         values[] = {3, 4, 5, 6, 7, 8, 9, 10};
         texts[] = {3, 4, 5, 6, 7, 8, 9, 10};
-        default = 10;
+        default = 5;
     };
     class Spacer2 {
         title = "";
@@ -243,7 +243,7 @@ class Params {
         title = $STR_PARAM_RESPAWN_COOLDOWN;
         values[] = {0, 300, 600, 900, 1200, 1800, 3600};
         texts[] = {$STR_PARAMS_DISABLED, 5, 10, 15, 20, 30, 60};
-        default = 600;
+        default = 0;
     };
     class MobileArsenal {
         title = $STR_PARAMS_MOBILEARSENAL;
@@ -255,7 +255,7 @@ class Params {
         title = $STR_PARAMS_ATTACKEDSECTORRESPAWN;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 0;
+        default = 1;
     };
     class AiLogistics {
         title = $STR_PARAMS_AILOGISTICS;
@@ -273,7 +273,7 @@ class Params {
         title = $STR_HALO_PARAM;
         values[] = {1, 5, 10, 15, 20, 30, 0};
         texts[] = {$STR_HALO_PARAM1, $STR_HALO_PARAM2, $STR_HALO_PARAM3, $STR_HALO_PARAM4, $STR_HALO_PARAM5, $STR_HALO_PARAM6, $STR_PARAMS_DISABLED};
-        default = 5;
+        default = 0;
     };
     class ClearCargo {
         title = $STR_PARAM_CLEAR_CARGO;
@@ -297,7 +297,7 @@ class Params {
         title = $STR_PARAM_COMMANDERZEUS;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class LimitedZeus {
         title = $STR_PARAM_LIMITEDZEUS;
@@ -327,7 +327,7 @@ class Params {
         title = $STR_PARAM_TUTORIAL;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class Spacer3 {
         title = "";
@@ -351,19 +351,19 @@ class Params {
         title = $STR_CLEANUP_PARAM;
         values[] = {0, 1, 2, 4};
         texts[] = {$STR_PARAMS_DISABLED, $STR_CLEANUP_PARAM1, $STR_CLEANUP_PARAM2, $STR_CLEANUP_PARAM3};
-        default = 2;
+        default = 1;
     };
     class Introduction {
         title = $STR_PARAMS_INTRO;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class DeploymentCinematic {
         title = $STR_PARAMS_DEPLOYMENTCAMERA;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class Whitelist {
         title = $STR_WHITELIST_PARAM;
@@ -375,7 +375,7 @@ class Params {
         title = $STR_RESTART_PARAM;
         values[] = {0, 1, 2, 3, 4, 5, 6};
         texts[] = {$STR_PARAMS_DISABLED, "1", "2", "3", "4", "5", "6"};
-        default = 0;
+        default = 6;
     };
     class WipeSave1 {
         title = $STR_WIPE_TITLE;
