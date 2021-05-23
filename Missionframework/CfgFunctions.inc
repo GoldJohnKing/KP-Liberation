@@ -101,3 +101,5 @@ class KPLIB {
     #include "scripts\client\CfgFunctions.inc"
     #include "scripts\server\CfgFunctions.inc"
 };
+
+#include "Custom\CH_brightNights\CH_brightNights_functions.hpp" // Edited: Add CH Bright Nights
